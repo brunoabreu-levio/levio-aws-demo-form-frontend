@@ -2,13 +2,21 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
     let data = {
-        firstName: document.getElementById('FirstName').value,
-        lastName: document.getElementById('LastName').value,
-        companyName: document.getElementById('CompanyName').value,
-        email: document.getElementById('Email').value
+        personalInfo: {
+            firstName: document.getElementById('FirstName').value,
+            lastName: document.getElementById('LastName').value
+        },
+        professionalInfo: {
+            companyName: document.getElementById('CompanyName').value,
+            contact: {
+                email: document.getElementById('Email').value,
+                phone: "4181112223"
+            }
+        },
+        isPersonalInfoConsented: true
     };
 
-    fetch('https://12mky8kdpk.execute-api.us-west-2.amazonaws.com/Prod/demo/person', {
+    fetch('https://4q0xg0vhxh.execute-api.us-west-2.amazonaws.com/PROD/person', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
