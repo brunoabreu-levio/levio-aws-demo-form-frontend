@@ -137,16 +137,16 @@
 
                         <ul class="mb-0 text-center inline-block">
                             <li class="mb-1 last:mb-0">
-                                <a href="https://levio.ca/contact/"
+                                <a href="javascript:void(0);" id="langFr"
                                    class="group h-extend-cursor-area text-white uppercase relative rounded-md h-8 w-9 flex justify-center items-center h-focus-state h-focus-state--offset-primary text-primary-500 bg-white font-extrabold cursor-default"
-                                   aria-label="Fran&#xE7;ais">
+                                   aria-label="Fran&#xE7;ais" onclick="setLanguage('fr');">
                                     <span class="pf-button-label group-hover:bg-visible-line">Fr</span>
                                 </a>
                             </li>
                             <li class="mb-1 last:mb-0">
-                                <a href="https://www.levioconsulting.com/contact-us/"
+                                <a href="javascript:void(0);" id="langEn"
                                    class="group h-extend-cursor-area text-white uppercase relative rounded-md h-8 w-9 flex justify-center items-center h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   aria-label="English">
+                                   aria-label="English" onclick="setLanguage('en');">
                                     <span class="pf-button-label group-hover:bg-visible-line">En</span>
                                 </a>
                             </li>
@@ -1191,34 +1191,10 @@
                 <div class="pt-top-bar pb-12 lg:pb-top-bar">
                     <div class="px-section text-left flex flex-col items-center w-sm max-w-full mx-auto">
                         <div class="mt-10 sm:col-span-6">
-                            <h2 class="mt-0 mb-3" data-heading-title="">Bienvenue</h2>
+                            <h2 class="mt-0 mb-3" data-heading-title="" data-key="welcome">Bienvenue</h2>
                             <span class="ui-provider ec bnp bfu cgd cge cgf cgg cgh cgi cgj cgk cgl cgm cgn cgo cgp cgq cgr cgs cgt cgu cgv cgw cgx cgy cgz cha chb chc chd che chf chg chh chi">
-                                <p>
-                                    Le Valet de Levio, un outil de clavardage de type Chatbot intégré à une page web, se
-                                    distingue non seulement par sa capacité à interagir en langage naturel, mais aussi par sa
-                                    disponibilité constante : il est accessible 24 heures sur 24, 365 jours par an. De plus, ce
-                                    valet automatisé peut communiquer dans plusieurs langues, indépendamment de la langue des
-                                    documents sources. Cela rend l'outil particulièrement polyvalent et accessible à un large
-                                    éventail d'utilisateurs.
-                                </p>
-                                <p>
-                                    Allant encore plus loin, le Valet de Levio offre la possibilité d'interagir via la voix à
-                                    travers un appel téléphonique. Cette fonctionnalité enrichit l'expérience utilisateur en
-                                    offrant une alternative pratique pour ceux qui préfèrent ou nécessitent une communication
-                                    vocale. Essayez-le en appelant au numéro suivant : 1 8xx abc defg. (à venir)
-                                </p>
-                                <p>
-                                    Dans cet exemple, le Valet a été configuré pour extraire des informations des documents
-                                    d'assurances collectives de la fonction publique québécoise, mais sa conception flexible lui
-                                    permet de s'adapter à diverses autres sources de données. Cela en fait un outil précieux
-                                    pour répondre de manière précise et pertinente à une vaste gamme de questions, telles que
-                                    des interrogations sur les avantages liés à l'assurance ou les documents nécessaires pour
-                                    une réclamation, facilitant ainsi l'accès à des informations essentielles pour les employés
-                                    du secteur public québécois et au-delà.
-                                </p>
-                                <p>
-                                    N'hésitez pas à nous rejoindre pour mettre le Valet de Levio au service de votre
-                                    organisation.
+                                <p data-key="demo">
+
                                 </p>
                             </span>
                         </div>
@@ -1279,49 +1255,49 @@
                         <ul class="mb-8 lg:mb-0 lg:flex lg:items-center lg:space-x-8 leading-tight">
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/notre-approche/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Notre Approche</span>
+                                   href="https://levio.ca/notre-approche/" rel="" data-key="our-approach-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="our-approach-span">Notre Approche</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/nos-services/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Services</span>
+                                   href="https://levio.ca/nos-services/" rel="" data-key="services-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="services-span">Services</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/industries/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Industries</span>
+                                   href="https://levio.ca/industries/" rel="" data-key="industries-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="industries-span">Industries</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/expertises/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Expertises</span>
+                                   href="https://levio.ca/expertises/" rel="" data-key="insights-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="insights-span">Expertises</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/qui-nous-sommes/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Qui nous sommes</span>
+                                   href="https://levio.ca/qui-nous-sommes/" rel="" data-key="about-us-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="about-us-span">Qui nous sommes</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/carrieres/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Carri&#xE8;res</span>
+                                   href="https://levio.ca/carrieres/" rel="" data-key="career-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="career-span">Carri&#xE8;res</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
 
                     <a class="pf-button group relative h-focus-state h-focus-state--offset-primary pf-button--primary pf-transition-outline pf-transition-outline--white "
-                       href="https://levio.ca/contact/" rel="">
+                       href="https://levio.ca/contact/" rel="" data-key="contact-href">
         <span class="flex relative items-center justify-center h-full">
 
             <span>
-                <span class="pf-button-label">Contact</span>
+                <span class="pf-button-label" data-key="contact-span">Contact</span>
             </span>
 
         </span>
@@ -1379,7 +1355,7 @@
             </div>
 
             <div class="sm:flex sm:items-center">
-                <p class="text-p4 text-white leading-tight mb-2 sm:mb-0 mr-auto">©2024 Levio conseils inc. Tous droits r&#xE9;serv&#xE9;s.</p>
+                <p class="text-p4 text-white leading-tight mb-2 sm:mb-0 mr-auto" data-key="all-rights">©2024 Levio conseils inc. Tous droits r&#xE9;serv&#xE9;s.</p>
 
                 <div class="xs:flex xs:items-center xs:justify-between sm:justify-end">
                     <nav class="sm:ml-8" aria-label="Secondaire">
@@ -1387,27 +1363,26 @@
                             <li class="leading-none">
                                 <a class="group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
                                    href="https://levio.ca/conditions-dutilisation/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Conditions d&#x27;utilisation</span>
+                                   rel="noopener noreferrer" data-key="terms-of-use-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="terms-of-use-span">Conditions d&#x27;utilisation</span>
                                 </a>
                             </li>
                             <li class="leading-none">
                                 <a class="group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
                                    href="https://levio.ca/politique-de-confidentialite/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Politique de confidentialit&#xE9;</span>
+                                   rel="noopener noreferrer" data-key="privacy-policy-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="privacy-policy-span">Politique de confidentialit&#xE9;</span>
                                 </a>
                             </li>
                             <li class="leading-none">
                                 <a class="group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/politique-de-gestion-des-temoins/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Politique de Gestion des T&#xE9;moins</span>
+                                   href="https://levio.ca/politique-de-gestion-des-temoins/" rel="" data-key="cookies-policy-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="cookies-policy-span">Politique de Gestion des T&#xE9;moins</span>
                                 </a>
                             </li>
                             <li class="leading-none">
                                 <a href='#'
-                                   class='iubenda-cs-preferences-link group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary'>Vos
-                                    choix en mati&#xE8;re de confidentialit&#xE9;</a>
+                                   class='iubenda-cs-preferences-link group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary' data-key="privacy-choices-href">Vos choix en mati&#xE8;re de confidentialit&#xE9;</a>
                             </li>
                         </ul>
                     </nav>
@@ -1465,6 +1440,9 @@
     </footer>
 
 </div>
+
+<script src="js/languages.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

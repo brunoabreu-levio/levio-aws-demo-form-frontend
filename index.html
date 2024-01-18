@@ -137,16 +137,16 @@
 
                         <ul class="mb-0 text-center inline-block">
                             <li class="mb-1 last:mb-0">
-                                <a href="https://levio.ca/contact/"
+                                <a href="javascript:void(0);" id="langFr"
                                    class="group h-extend-cursor-area text-white uppercase relative rounded-md h-8 w-9 flex justify-center items-center h-focus-state h-focus-state--offset-primary text-primary-500 bg-white font-extrabold cursor-default"
-                                   aria-label="Fran&#xE7;ais">
+                                   aria-label="Fran&#xE7;ais" onclick="setLanguage('fr');">
                                     <span class="pf-button-label group-hover:bg-visible-line">Fr</span>
                                 </a>
                             </li>
                             <li class="mb-1 last:mb-0">
-                                <a href="https://www.levioconsulting.com/contact-us/"
+                                <a href="javascript:void(0);" id="langEn"
                                    class="group h-extend-cursor-area text-white uppercase relative rounded-md h-8 w-9 flex justify-center items-center h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   aria-label="English">
+                                   aria-label="English" onclick="setLanguage('en');">
                                     <span class="pf-button-label group-hover:bg-visible-line">En</span>
                                 </a>
                             </li>
@@ -1202,7 +1202,8 @@
 
                 <div class="pf-title-separator mb-12 mt-16 sm:mb-16 sm:mt-24 pb-3 border-b border-secondary-500">
                     <div class="max-w-screen-lg h-remove-margin">
-                        <h2 class='text-h3 uppercase font-display font-semibold tracking-[0.3em] mb-6 mt-0'>S'inscrire
+                        <h2 class='text-h3 uppercase font-display font-semibold tracking-[0.3em] mb-6 mt-0'
+                            data-key="main-title">S'inscrire
                             pour utiliser la démonstration</h2></div>
                 </div>
 
@@ -1216,59 +1217,60 @@
 
                                 <div class="pf-form-field sm:col-span-3">
                                     <label class="mb-2 block text-p1 text-primary-500 transition-colors duration-200 ease-in-out"
-                                           for="LastName">Nom *</label>
+                                           for="LastName" data-key="last-name-label">Nom *</label>
                                     <input class="input-text rounded-lg flex-1 block w-full min-w-0 transition-colors duration-200 ease-in-out"
                                            type="text" data-val="true"
                                            data-val-required="Le champ &#xAB; Nom &#xBB; est requis." id="LastName"
-                                           name="LastName" value="" placeholder="Saisir votre nom"/>
+                                           name="LastName" value="" placeholder="Saisir votre nom" data-key="last-name-input"/>
                                     <span class="field-validation-valid" data-valmsg-for="LastName"
                                           data-valmsg-replace="true"></span>
                                 </div>
 
                                 <div class="pf-form-field sm:col-span-3">
                                     <label class="mb-2 block text-p1 text-primary-500 transition-colors duration-200 ease-in-out"
-                                           for="FirstName">Prénom *</label>
+                                           for="FirstName" data-key="first-name-label">Prénom *</label>
                                     <input class="input-text rounded-lg flex-1 block w-full min-w-0 transition-colors duration-200 ease-in-out"
                                            type="text" data-val="true"
                                            data-val-required="Le champ &#xAB; Prénom &#xBB; est requis." id="FirstName"
-                                           name="FirstName" value="" placeholder="Saisir votre prénom"/>
+                                           name="FirstName" value="" placeholder="Saisir votre prénom" data-key="first-name-input"/>
                                     <span class="field-validation-valid" data-valmsg-for="FirstName"
                                           data-valmsg-replace="true"></span>
                                 </div>
 
                                 <div class="pf-form-field sm:col-span-6">
                                     <label class="mb-2 block text-p1 text-primary-500 transition-colors duration-200 ease-in-out"
-                                           for="Email">Courriel *</label>
+                                           for="Email" data-key="email-label">Courriel *</label>
                                     <input class="input-text rounded-lg flex-1 block w-full min-w-0 transition-colors duration-200 ease-in-out"
                                            type="email" data-val="true"
                                            data-val-email="Le champ &#xAB; Courriel &#xBB; doit &#xEA;tre une adresse courriel valide (ex. : exemple@exemple.com)."
                                            data-val-required="Le champ &#xAB; Courriel &#xBB; est requis." id="Email"
-                                           name="Email" value="" placeholder="exemple@exemple.com"/>
+                                           name="Email" value="" placeholder="exemple@exemple.com" data-key="email-input"/>
                                     <span class="field-validation-valid" data-valmsg-for="Email"
                                           data-valmsg-replace="true"></span>
                                 </div>
 
                                 <div class="pf-form-field sm:col-span-6">
                                     <label class="mb-2 block text-p1 text-primary-500 transition-colors duration-200 ease-in-out"
-                                           for="Telephone">Téléphone *</label>
+                                           for="Telephone" data-key="phone-label">Téléphone *</label>
                                     <input class="input-text rounded-lg flex-1 block w-full min-w-0 transition-colors duration-200 ease-in-out"
                                            type="tel" data-val="true"
                                            data-val-phone="Le champ &#xAB; Téléphone &#xBB; doit &#xEA;tre une téléphone valide (ex. : 418 111 1111)."
-                                           data-val-required="Le champ &#xAB; Téléphone &#xBB; est requis." id="Telephone"
-                                           name="Telephone" value="" placeholder="418 111 1111"/>
+                                           data-val-required="Le champ &#xAB; Téléphone &#xBB; est requis."
+                                           id="Telephone"
+                                           name="Telephone" value="" placeholder="418 111 1111" data-key="phone-input"/>
                                     <span class="field-validation-valid" data-valmsg-for="Telephone"
                                           data-valmsg-replace="true"></span>
                                 </div>
 
                                 <div class="pf-form-field sm:col-span-6">
                                     <label class="mb-2 block text-p1 text-primary-500 transition-colors duration-200 ease-in-out"
-                                           for="CompanyName">Entreprise *</label>
+                                           for="CompanyName" data-key="company-label">Entreprise *</label>
                                     <input class="input-text rounded-lg flex-1 block w-full min-w-0 transition-colors duration-200 ease-in-out"
                                            type="text" data-val="true"
                                            data-val-required="Le champ &#xAB; Entreprise &#xBB; est requis."
                                            id="CompanyName"
                                            name="CompanyName" value=""
-                                           placeholder="Saisir le nom de l'entreprise pour laquelle vous travaillez"/>
+                                           placeholder="Saisir le nom de l'entreprise pour laquelle vous travaillez" data-key="company-input"/>
                                     <span class="field-validation-valid" data-valmsg-for="CompanyName"
                                           data-valmsg-replace="true"></span>
                                 </div>
@@ -1278,17 +1280,17 @@
                                            id="Consent"
                                            name="Consent" checked/>
                                     <label class="block text-p1 text-primary-500 transition-colors duration-200 ease-in-out"
-                                           for="Consent">Je consens à la collecte de mes renseignements personnels par
-                                        Levio.</label>
+                                           for="Consent" data-key="consent-label">Je consens à la collecte de mes
+                                        renseignements personnels par Levio.</label>
                                 </div>
                                 <div class="mt-10 sm:col-span-6">
                                     <span>
                                         <p>
-                                            <span
-                                                    class="ui-provider ec bnp bfu cgd cge cgf cgg cgh cgi cgj cgk cgl cgm cgn cgo cgp cgq cgr cgs cgt cgu cgv cgw cgx cgy cgz cha chb chc chd che chf chg chh chi">En cochant la case ci-dessus, je consens à la collecte et à l'utilisation et à la conservation de mes renseignements personnels par Levio. Les informations recueillies seront utilisées par Levio pour communiquer avec les participants. Levio pourra utiliser les informations et coordonnées professionnelles recueillies afin de proposer des services utiles aux activités professionnelles des participants. Pour en savoir plus: <a
-                                                    href="https://levio.ca/politique-de-confidentialite/"
-                                                    title="Politique de confidentialité | Levio"> Politique de confidentialité | Levio</a> .
-                                            </span>
+                                            <span class="ui-provider ec bnp bfu cgd cge cgf cgg cgh cgi cgj cgk cgl cgm cgn cgo cgp cgq cgr cgs cgt cgu cgv cgw cgx cgy cgz cha chb chc chd che chf chg chh chi"
+                                                  data-key="consent-checkbox-span">En cochant la case ci-dessus, je consens à la collecte et à l'utilisation et à la conservation de mes renseignements personnels par Levio. Les informations recueillies seront utilisées par Levio pour communiquer avec les participants. Levio pourra utiliser les informations et coordonnées professionnelles recueillies afin de proposer des services utiles aux activités professionnelles des participants. Pour en savoir plus:</span>
+                                            <a href="https://levio.ca/politique-de-confidentialite/"
+                                               title="Politique de confidentialité | Levio" data-key="consent-href"> Politique de confidentialité | Levio
+                                            </a> .
                                         </p>
                                     </span>
                                 </div>
@@ -1296,7 +1298,8 @@
                                     <button id="formSubmitButton"
                                             class="group pf-button pf-button--lg pf-button--primary pf-transition-outline h-focus-state h-focus-state--offset-primary"
                                             type="submit" formnovalidate="formnovalidate">
-                                        <span class="relative">Accéder à la démonstration</span>
+                                        <span class="relative"
+                                              data-key="access-button-span">Accéder à la démonstration</span>
                                     </button>
                                 </div>
                             </div>
@@ -1347,49 +1350,49 @@
                         <ul class="mb-8 lg:mb-0 lg:flex lg:items-center lg:space-x-8 leading-tight">
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/notre-approche/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Notre Approche</span>
+                                       href="https://levio.ca/notre-approche/" rel="" data-key="our-approach-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="our-approach-span">Notre Approche</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/nos-services/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Services</span>
+                                   href="https://levio.ca/nos-services/" rel="" data-key="services-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="services-span">Services</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/industries/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Industries</span>
+                                   href="https://levio.ca/industries/" rel="" data-key="industries-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="industries-span">Industries</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/expertises/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Expertises</span>
+                                   href="https://levio.ca/expertises/" rel="" data-key="insights-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="insights-span">Expertises</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/qui-nous-sommes/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Qui nous sommes</span>
+                                   href="https://levio.ca/qui-nous-sommes/" rel="" data-key="about-us-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="about-us-span">Qui nous sommes</span>
                                 </a>
                             </li>
                             <li class="mb-4 lg:mb-0">
                                 <a class="group relative h-extend-cursor-area uppercase text-white font-semibold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/carrieres/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Carri&#xE8;res</span>
+                                   href="https://levio.ca/carrieres/" rel="" data-key="career-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="career-span">Carri&#xE8;res</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
 
                     <a class="pf-button group relative h-focus-state h-focus-state--offset-primary pf-button--primary pf-transition-outline pf-transition-outline--white "
-                       href="https://levio.ca/contact/" rel="">
+                       href="https://levio.ca/contact/" rel="" data-key="contact-href">
         <span class="flex relative items-center justify-center h-full">
 
             <span>
-                <span class="pf-button-label">Contact</span>
+                <span class="pf-button-label" data-key="contact-span">Contact</span>
             </span>
 
         </span>
@@ -1447,7 +1450,7 @@
             </div>
 
             <div class="sm:flex sm:items-center">
-                <p class="text-p4 text-white leading-tight mb-2 sm:mb-0 mr-auto">©2024 Levio conseils inc. Tous droits r&#xE9;serv&#xE9;s.</p>
+                <p class="text-p4 text-white leading-tight mb-2 sm:mb-0 mr-auto" data-key="all-rights">©2024 Levio conseils inc. Tous droits r&#xE9;serv&#xE9;s.</p>
 
                 <div class="xs:flex xs:items-center xs:justify-between sm:justify-end">
                     <nav class="sm:ml-8" aria-label="Secondaire">
@@ -1455,27 +1458,26 @@
                             <li class="leading-none">
                                 <a class="group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
                                    href="https://levio.ca/conditions-dutilisation/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Conditions d&#x27;utilisation</span>
+                                   rel="noopener noreferrer" data-key="terms-of-use-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="terms-of-use-span">Conditions d&#x27;utilisation</span>
                                 </a>
                             </li>
                             <li class="leading-none">
                                 <a class="group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
                                    href="https://levio.ca/politique-de-confidentialite/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Politique de confidentialit&#xE9;</span>
+                                   rel="noopener noreferrer" data-key="privacy-policy-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="privacy-policy-span">Politique de confidentialit&#xE9;</span>
                                 </a>
                             </li>
                             <li class="leading-none">
                                 <a class="group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary pf-transition-link-underline-enter"
-                                   href="https://levio.ca/politique-de-gestion-des-temoins/" rel="">
-                                    <span class="pf-button-label group-hover:bg-visible-line">Politique de Gestion des T&#xE9;moins</span>
+                                   href="https://levio.ca/politique-de-gestion-des-temoins/" rel="" data-key="cookies-policy-href">
+                                    <span class="pf-button-label group-hover:bg-visible-line" data-key="cookies-policy-span">Politique de Gestion des T&#xE9;moins</span>
                                 </a>
                             </li>
                             <li class="leading-none">
                                 <a href='#'
-                                   class='iubenda-cs-preferences-link group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary'>Vos
-                                    choix en mati&#xE8;re de confidentialit&#xE9;</a>
+                                   class='iubenda-cs-preferences-link group relative h-extend-cursor-area text-p4 text-white font-bold rounded-sm h-focus-state h-focus-state--offset-primary' data-key="privacy-choices-href">Vos choix en mati&#xE8;re de confidentialit&#xE9;</a>
                             </li>
                         </ul>
                     </nav>
@@ -1534,6 +1536,7 @@
 
 </div>
 
+<script src="js/languages.js"></script>
 <script src="js/app.js"></script>
 
 </body>
