@@ -1,25 +1,25 @@
 const languages = {
     'en': {
         'main-title': 'Register to use the demo',
-        'last-name-label': 'Last Name *',
+        'last-name-label': 'Last Name',
         'last-name-input': {
             'text': 'Enter your last name', 'data-val-required': 'The “Last Name” field is required.'
         },
-        'first-name-label': 'First Name *',
+        'first-name-label': 'First Name',
         'first-name-input': {
             'text': 'Enter your first name', 'data-val-required': 'The “First Name” field is required.'
         },
-        'email-label': 'E-mail *',
+        'email-label': 'E-mail',
         'email-input': {
             'data-val-required': 'The “E-mail” field is required.',
             'data-val-email': 'The “Email” field must be a valid email address (e.g.: example@example.com).'
         },
-        'phone-label': 'Phone *',
+        'phone-label': 'Phone',
         'phone-input': {
             'data-val-required': 'The “Phone” field is required.',
             'data-val-phone': 'The “Phone” field must be a valid telephone number (e.g.: 418 111 1111).'
         },
-        'company-label': 'Company *',
+        'company-label': 'Company',
         'company-input': {
             'text': 'Enter the name of the company you work for',
             'data-val-required': 'The “Company” field is required.'
@@ -86,25 +86,25 @@ const languages = {
             'Do not hesitate to join us to put the Valet of Levio at the service of your organization.',
     }, 'fr': {
         'main-title': 'S\'inscrire pour utiliser la démonstration',
-        'last-name-label': 'Nom *',
+        'last-name-label': 'Nom',
         'last-name-input': {
             'text': 'Saisir votre nom', 'data-val-required': 'Le champ « Nom » est requis.'
         },
-        'first-name-label': 'Prénom *',
+        'first-name-label': 'Prénom',
         'first-name-input': {
             'text': 'Saisir votre prénom', 'data-val-required': 'Le champ « Prénom » est requis.'
         },
-        'email-label': 'Courriel *',
+        'email-label': 'Courriel',
         'email-input': {
             'data-val-required': 'Le champ « Courriel » est requis.',
             'data-val-email': 'Le champ « Courriel » doit être une adresse courriel valide (ex. : exemple@exemple.com).'
         },
-        'phone-label': 'Téléphone *',
+        'phone-label': 'Téléphone',
         'phone-input': {
             'data-val-required': 'Le champ « Téléphone » est requis.',
             'data-val-phone': 'Le champ « Téléphone » doit être une téléphone valide (ex. : 418 111 1111).'
         },
-        'company-label': 'Entreprise *',
+        'company-label': 'Entreprise',
         'company-input': {
             'text': 'Saisir le nom de l\'entreprise pour laquelle vous travaillez',
             'data-val-required': 'Le champ « Entreprise » est requis.'

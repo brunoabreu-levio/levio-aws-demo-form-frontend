@@ -45,13 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         inputs.forEach(input => {
             clearErrorMessage(input);
-
-            if (!validateRequiredField(input)) {
-                isValid = false;
-            } else if (input.type === 'email' && !validateEmail(input)) {
-                isValid = false;
-            } else if (input.type === 'tel' && !validatePhone(input)) {
-                isValid = false;
+            const isPersonalInfoConsented = document.getElementById('Consent').checked
+            if (isPersonalInfoConsented) {
+                if (!validateRequiredField(input)) {
+                    isValid = false;
+                } else if (input.type === 'email' && !validateEmail(input)) {
+                    isValid = false;
+                } else if (input.type === 'tel' && !validatePhone(input)) {
+                    isValid = false;
+                }
             }
         });
 
@@ -121,7 +123,7 @@ function setLanguage(lang) {
                     elem.title = langData['title'];
                 }
                 if (langData['text']) {
-                    elem.innerHTML  = langData['text'];
+                    elem.innerHTML = langData['text'];
                 }
             } else if (elem.tagName === 'INPUT') {
                 if (langData['text']) {
@@ -137,7 +139,7 @@ function setLanguage(lang) {
                     elem.setAttribute('data-val-email', langData['data-val-email']);
                 }
             } else {
-                elem.innerHTML  = langData;
+                elem.innerHTML = langData;
             }
         }
     );
@@ -157,7 +159,6 @@ function setLanguage(lang) {
         langFr.className = notClickedClass;
     }
 
-    console.log("set language", lang)
     localStorage.setItem('selectedLanguage', lang);
 }
 
