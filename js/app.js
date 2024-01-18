@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    setLanguage(savedLanguage ? savedLanguage : 'fr');
+
     const form = document.getElementById('contactForm');
     const submitButton = document.getElementById('formSubmitButton');
 
@@ -153,6 +156,9 @@ function setLanguage(lang) {
         langEn.className = clickedClass;
         langFr.className = notClickedClass;
     }
+
+    console.log("set language", lang)
+    localStorage.setItem('selectedLanguage', lang);
 }
 
 function clearErrorMessage(inputElement) {
@@ -171,6 +177,4 @@ function clearErrorMessages() {
         });
     }
 }
-
-setLanguage('fr');
 
