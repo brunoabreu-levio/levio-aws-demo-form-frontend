@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <script type="text/javascript">
+        const savedLanguage = navigator.language || localStorage.getItem('selectedLanguage');
         var _iub = _iub || [];
         _iub.csConfiguration = {
             "localConsentDomain": "levio.ca",
@@ -15,7 +16,7 @@
             "countryDetection": true,
             "enableLgpd": true,
             "enableUspr": true,
-            "lang": "fr",
+            "lang": savedLanguage ? savedLanguage : 'fr',
             "lgpdAppliesGlobally": false,
             "perPurposeConsent": true,
             "purposes": "4",
