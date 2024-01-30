@@ -77,13 +77,13 @@ const languages = {
             'text': 'Your Privacy Choices'
         },
         'welcome': 'Welcome',
-        'demo': 'Levio\'s Valet, a Chatbot-type chat tool integrated into a web page, stands out not only for its ability to interact in natural language, but also for its constant availability: it is accessible 24 hours a day, 365 days a year . Additionally, this automated valet can communicate in multiple languages, regardless of the language of the source documents. This makes the tool particularly versatile and accessible to a wide range of users.\n' +
-            '  </p><p>\n' +
-            'Going even further, the Levio Valet offers the possibility of interacting via voice through a phone call. This feature enriches the user experience by providing a convenient alternative for those who prefer or require voice communication. Try it by calling the following number: 1 8xx abc defg. (future)\n' +
+        'demo': 'Levio\'s Valet, a Chatbot-type tool integrated into a web page, stands out not only for its ability to interact in natural language, but also for its constant availability: it is accessible 24 hours a day, 365 days a year. Additionally, this automated valet can communicate in multiple languages, regardless of the source documents\' language. This versatility makes the tool particularly accessible to a wide range of users.' +
             '</p><p>\n' +
-            'In this example, Valet was configured to extract information from Quebec public service group insurance documents, but its flexible design allows it to adapt to various other data sources. This makes it a valuable tool for accurately and meaningfully answering a wide range of questions, such as questions about insurance benefits or the documents needed for a claim, making it easier to access essential information for employees of the Quebec public sector and beyond.\n' +
+            'Going even further, the Levio Valet offers the possibility of interacting via voice through a phone call. This feature enhances the user experience by providing a convenient alternative for those who prefer or require voice communication. Try it by calling the following number: 1 8xx abc defg. (future)' +
             '</p><p>\n' +
-            'Do not hesitate to join us to put the Valet of Levio at the service of your organization.',
+            'In this example, Valet was configured to extract information from Quebec public service group insurance documents, but its flexible design allows it to adapt to various other data sources. This flexibility makes it a valuable tool for accurately and meaningfully answering a wide range of questions, such as those about insurance benefits or the documents needed for a claim. It makes accessing essential information easier for employees of the Quebec public sector and beyond.' +
+            '</p><p>\n' +
+            'Do not hesitate to contact us to put Levio’s Valet at the service of your organization.',
     }, 'fr': {
         'main-title': 'S\'inscrire pour utiliser la démonstration',
         'last-name-label': 'Nom',
@@ -162,12 +162,12 @@ const languages = {
             'text': 'Vos choix en matière de confidentialité'
         },
         'welcome': 'Bienvenue',
-        'demo': 'Le Valet de Levio, un outil de clavardage de type Chatbot intégré à une page web, se distingue non seulement par sa capacité à interagir en langage naturel, mais aussi par sa disponibilité constante : il est accessible 24 heures sur 24, 365 jours par an. De plus, ce valet automatisé peut communiquer dans plusieurs langues, indépendamment de la langue des documents sources. Cela rend l\'outil particulièrement polyvalent et accessible à un large éventail d\'utilisateurs.\n' +
-            ' </p><p>\n' +
-            'Allant encore plus loin, le Valet de Levio offre la possibilité d\'interagir via la voix à travers un appel téléphonique. Cette fonctionnalité enrichit l\'expérience utilisateur en offrant une alternative pratique pour ceux qui préfèrent ou nécessitent une communication vocale. Essayez-le en appelant au numéro suivant : 1 8xx abc defg. (à venir)\n' +
+        'demo': 'Le Valet de Levio, un outil de clavardage de type dialogueur (chatbot) intégré à une page web, se distingue non seulement par sa capacité à interagir en langage naturel, mais aussi par sa disponibilité constante : il est accessible 24 heures sur 24, 365 jours par année. De plus, ce valet automatisé peut communiquer dans plusieurs langues, indépendamment de la langue des documents sources. Cela rend l\'outil particulièrement polyvalent et accessible à un large éventail d\'utilisateurs.' +
             '</p><p>\n' +
-            'Dans cet exemple, le Valet a été configuré pour extraire des informations des documents d\'assurances collectives de la fonction publique québécoise, mais sa conception flexible lui permet de s\'adapter à diverses autres sources de données. Cela en fait un outil précieux pour répondre de manière précise et pertinente à une vaste gamme de questions, telles que des interrogations sur les avantages liés à l\'assurance ou les documents nécessaires pour une réclamation, facilitant ainsi l\'accès à des informations essentielles pour les employés du secteur public québécois et au-delà.\n' +
+            'Plus encore, le Valet de Levio offre la possibilité d\'interagir via la voix à travers un appel téléphonique. Cette fonctionnalité enrichit l\'expérience utilisateur en offrant une alternative pratique pour ceux qui préfèrent ou nécessitent une communication vocale. Essayez-le en appelant au numéro suivant : 1 8xx abc defg. (à venir)' +
             '</p><p>\n' +
-            'N\'hésitez pas à nous rejoindre pour mettre le Valet de Levio au service de votre organisation.',
+            'Dans cet exemple, le Valet a été configuré pour extraire des informations des documents d\'assurances collectives de la fonction publique québécoise, mais sa conception flexible lui permet de s\'adapter à diverses autres sources de données. Cela en fait un outil précieux pour répondre de manière précise et pertinente à une vaste gamme de questions, telles que des interrogations sur les avantages liés à l\'assurance ou les documents nécessaires pour une réclamation, facilitant ainsi l\'accès à des informations essentielles pour les employés du secteur public québécois et au-delà.' +
+            '</p><p>\n' +
+            'N\'hésitez pas à nous joindre pour mettre le Valet de Levio au service de votre organisation.',
     }
 };
